@@ -54,14 +54,27 @@
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
-<li>Optimizes hoppers by 80-95%</li>
+<li>Optimizes hoppers by 80-95
+
+<ul>
+<li>Adds an option to disable InventoryMoveItemEvent</li>
+</ul>
+</li>
 <li>Optimizes armor stands by 90%+
 
 <ul>
 <li>Disables gravity for armor stands (you must set "armor-stand.optimize-movement" to true)</li>
+<li>Avoiding looking up entities when moving</li>
 </ul>
 </li>
-<li>Improves DataWatcher</li>
+<li>Improve removing entities
+
+<ul>
+<li>This can actually provide a noticeable speedup for lots of entities</li>
+<li>Went from O(n^2) time to O(n) time</li>
+<li>Credits to Aikar</li>
+</ul>
+</li>
 </ul>
 
 <h2>
