@@ -46,12 +46,12 @@
 
       <section id="main_content">
         <h1>
-<a id="tacospigot" class="anchor" href="#tacospigot" aria-hidden="true"><span class="octicon octicon-link"></span></a>TacoSpigot</h1>
+<a id="tacospigot" class="anchor" href="#tacospigot" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TacoSpigot</h1>
 
 <p>TacoSpigot is a even higher performance fork of PaperSpigot.</p>
 
 <h2>
-<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
 <li>Optimizes hoppers by 80-95
@@ -67,18 +67,60 @@
 <li>Avoiding looking up entities when moving</li>
 </ul>
 </li>
-<li>Improve removing entities
+<li>XRay optimization
 
 <ul>
-<li>This can actually provide a noticeable speedup for lots of entities</li>
-<li>Went from O(n^2) time to O(n) time</li>
-<li>Credits to Aikar</li>
+<li>Reduces redundant checking for blocks</li>
+</ul>
+</li>
+<li>Optimize getting blocks
+
+<ul>
+<li>Helps with entities and redstone</li>
+<li>Doesn't even show up in the developer's samplings anymore</li>
+</ul>
+</li>
+<li>Optimize setting blocks
+
+<ul>
+<li>Helps with redstone</li>
+<li>Is now at '0%' in samplings</li>
+</ul>
+</li>
+<li>Slightly faster event execution</li>
+</ul>
+
+<h2>
+<a id="downloading" class="anchor" href="#downloading" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Downloading</h2>
+
+<p>TacoSpigot has pre-built binaries built using <a href="https://github.com/PaperSpigot/Paperclip">Paperclip</a>
+You can download them here: <a href="https://techcable.net/downloads/tacospigot/">https://techcable.net/downloads/tacospigot/</a></p>
+
+<p>There are 2 types of releases)</p>
+
+<ul>
+<li>The versions are marked 'stable' if they are considered stable.
+
+<ul>
+<li>Most server owners should choose this</li>
+<li>These builds usually have been in production for a while</li>
+</ul>
+</li>
+<li>The versions are marked 'semi-stable', if they are considered 'almost' stable
+
+<ul>
+<li>Choose this if you wan't the latest performance optimization, and are fine with having some potential bugs</li>
+<li>This probably hasn't been in production very long</li>
+<li>These builds will always have gone through testing on the developer's machine</li>
+<li>You should probably still test these on your own though, as I may miss something, or not do very thorough testing.</li>
 </ul>
 </li>
 </ul>
 
+<p>Unless I get a CI server, I'm not goona put up development builds.</p>
+
 <h2>
-<a id="building" class="anchor" href="#building" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building</h2>
+<a id="building" class="anchor" href="#building" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Building</h2>
 
 <ul>
 <li>Download <a href="https://github.com/TacoSpigot/TacoTools/releases">TacoTools</a> and run it.
@@ -96,14 +138,14 @@
 </ul>
 
 <h2>
-<a id="developers" class="anchor" href="#developers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Developers</h2>
+<a id="developers" class="anchor" href="#developers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Developers</h2>
 
 <ul>
 <li>Techcable</li>
 </ul>
 
 <h2>
-<a id="sponsors" class="anchor" href="#sponsors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sponsors</h2>
+<a id="sponsors" class="anchor" href="#sponsors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sponsors</h2>
 
 <p><a href="https://www.yourkit.com/java/profiler/index.jsp"><img src="https://www.yourkit.com/images/yklogo.png" alt="YourKit Logo"></a></p>
 
